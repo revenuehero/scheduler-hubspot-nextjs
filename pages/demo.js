@@ -12,7 +12,7 @@ export default function Demo() {
       <Script
         id="hubspot-form"
         src="//js-eu1.hsforms.net/forms/embed/v2.js"
-        onReady={() => {
+        onLoad={() => {
           window.hbspt.forms.create({
             region: "eu1",
             portalId: "26188731",
@@ -28,7 +28,7 @@ export default function Demo() {
           <Script
             id="revenuehero-embed"
             src="https://app.revenuehero.io/scheduler.min.js"
-            onReady={() => {
+            onLoad={() => {
               const embedTarget = document.createElement("div");
               embedTarget.id = "embed-revenuehero";
               embedTarget.style.height = "100vh";
